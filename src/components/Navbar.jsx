@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { ReactComponent as Logo } from "../assets/logo.svg";
+import { ReactComponent as Menu } from "../assets/icon-menu.svg";
 
 function Navbar() {
   return (
-    <div>
-        
+    <div className='navbar'>
+      <Logo />
+      <Menu />
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
