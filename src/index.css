@@ -1,0 +1,11 @@
+:root {
+  --main-bg-color: hsl(0, 0%, 98%);
+  --main-text-color: hsl(0, 0%, 8%);
+  --other-text-color: hsl(0, 0%, 41%);
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+}
+
+/* element {
+    background-color: var(--main-bg-color);
+  } */
