@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  z-index: -1;
 }
 
 .intro {
@@ -30,26 +31,69 @@ body {
   font-size: 42px;
 }
 
-.description {
+.presentation {
   font-size: 20px;
   margin: 1em 0.5em;
   line-height: 1.5em;
+  color: var(--other-text-color);
 }
 
 .btn {
   background-color: var(--main-text-color);
   color: var(--main-bg-color);
-  border-radius: 7px;
+  border-radius: 20px;
   padding: 0.5em 1em;
   font-weight: 700;
   font-size: 26px;
-  display: block;
-  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--main-text-color);
 }
 
 .client-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2em 0;
+  margin: 2em 1em;
+}
+
+.navbar-opener {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+
+@media screen and (min-width: 920px) {
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 4em;
+    margin: 4em 5em;
+  }
+  .intro-description {
+    text-align: left;
+  }
+
+  .btn {
+    margin: 2em 0;
+  }
+
+  .client-list {
+    margin-top: 5em;
+  }
 }

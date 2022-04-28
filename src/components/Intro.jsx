@@ -10,9 +10,9 @@ function Intro() {
       <div>
         <img src="/assets/image-hero-mobile.png" alt="" className="hero-img"/>
       </div>
-      <div>
+      <div className="intro-description">
         <h1 className="title">Make remote work</h1>
-        <p className="description">
+        <p className="presentation">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
